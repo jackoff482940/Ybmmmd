@@ -12,7 +12,9 @@ alembic==1.6.5
 amqp==5.1.0
     # via kombu
 apispec[yaml]==6.3.0
-    # via flask-appbuilder
+    # via
+    #   apispec
+    #   flask-appbuilder
 async-timeout==4.0.2
     # via redis
 attrs==23.1.0
@@ -20,7 +22,7 @@ attrs==23.1.0
 babel==2.9.1
     # via flask-babel
 backoff==1.11.1
-    # via apache-superset
+    # via sanitized-package
 bcrypt==4.0.1
     # via paramiko
 billiard==3.6.4.0
@@ -30,16 +32,15 @@ bottleneck==1.3.7
 brotli==1.0.9
     # via flask-compress
 cachelib==0.4.1
-    # via apache-superset
+    # via sanitized-package
 celery==5.2.2
-    # via apache-superset
+    # via sanitized-package
 cffi==1.15.1
     # via
     #   cryptography
     #   pynacl
 click==8.1.3
     # via
-    #   apache-superset
     #   celery
     #   click-didyoumean
     #   click-option-group
@@ -47,37 +48,37 @@ click==8.1.3
     #   click-repl
     #   flask
     #   flask-appbuilder
+    #   sanitized-package
 click-didyoumean==0.3.0
     # via celery
 click-option-group==0.5.5
-    # via apache-superset
+    # via sanitized-package
 click-plugins==1.1.1
     # via celery
 click-repl==0.2.0
     # via celery
 colorama==0.4.6
     # via
-    #   apache-superset
     #   flask-appbuilder
+    #   sanitized-package
 cron-descriptor==1.2.24
-    # via apache-superset
+    # via sanitized-package
 croniter==1.0.15
-    # via apache-superset
+    # via sanitized-package
 cryptography==41.0.0
     # via
-    #   apache-superset
     #   paramiko
+    #   sanitized-package
 deprecated==1.2.13
     # via limits
 deprecation==2.1.0
-    # via apache-superset
+    # via sanitized-package
 dnspython==2.1.0
     # via email-validator
 email-validator==1.1.3
     # via flask-appbuilder
 flask==2.2.5
     # via
-    #   apache-superset
     #   flask-appbuilder
     #   flask-babel
     #   flask-caching
@@ -88,60 +89,59 @@ flask==2.2.5
     #   flask-migrate
     #   flask-sqlalchemy
     #   flask-wtf
+    #   sanitized-package
 flask-appbuilder==4.3.4
-    # via apache-superset
+    # via sanitized-package
 flask-babel==1.0.0
     # via flask-appbuilder
 flask-caching==1.10.1
-    # via apache-superset
+    # via sanitized-package
 flask-compress==1.13
-    # via apache-superset
+    # via sanitized-package
 flask-jwt-extended==4.3.1
     # via flask-appbuilder
 flask-limiter==3.3.1
     # via flask-appbuilder
 flask-login==0.6.0
     # via
-    #   apache-superset
     #   flask-appbuilder
+    #   sanitized-package
 flask-migrate==3.1.0
-    # via apache-superset
+    # via sanitized-package
 flask-sqlalchemy==2.5.1
     # via
     #   flask-appbuilder
     #   flask-migrate
 flask-talisman==1.0.0
-    # via apache-superset
+    # via sanitized-package
 flask-wtf==1.1.1
     # via
-    #   apache-superset
     #   flask-appbuilder
+    #   sanitized-package
 func-timeout==4.3.5
-    # via apache-superset
+    # via sanitized-package
 geographiclib==1.52
     # via geopy
 geopy==2.2.0
-    # via apache-superset
+    # via sanitized-package
 greenlet==2.0.2
     # via sqlalchemy
 gunicorn==20.1.0
-    # via apache-superset
+    # via sanitized-package
 hashids==1.3.1
-    # via apache-superset
+    # via sanitized-package
 holidays==0.28
-    # via apache-superset
+    # via sanitized-package
 humanize==3.11.0
-    # via apache-superset
+    # via sanitized-package
 idna==3.2
     # via email-validator
 importlib-metadata==6.6.0
-    # via
-    #   apache-superset
-    #   flask
+    # via sanitized-package
 importlib-resources==5.12.0
     # via limits
 isodate==0.6.0
-    # via apache-superset
+    # via sanitized-package
 itsdangerous==2.1.2
     # via
     #   flask
@@ -161,9 +161,9 @@ llvmlite==0.40.1
 mako==1.2.4
     # via
     #   alembic
-    #   apache-superset
+    #   sanitized-package
 markdown==3.3.4
-    # via apache-superset
+    # via sanitized-package
 markdown-it-py==2.2.0
     # via rich
 markupsafe==2.1.1
@@ -181,75 +181,77 @@ marshmallow-sqlalchemy==0.23.1
 mdurl==0.1.2
     # via markdown-it-py
 msgpack==1.0.2
-    # via apache-superset
+    # via sanitized-package
 nh3==0.2.11
-    # via apache-superset
+    # via sanitized-package
 numba==0.57.1
     # via pandas
 numexpr==2.8.4
     # via pandas
 numpy==1.23.5
     # via
-    #   apache-superset
     #   bottleneck
     #   numba
     #   numexpr
     #   pandas
     #   pyarrow
+    #   sanitized-package
 ordered-set==4.1.0
     # via flask-limiter
 packaging==23.1
     # via
-    #   apache-superset
     #   apispec
     #   deprecation
     #   limits
     #   marshmallow
+    #   sanitized-package
 pandas[performance]==2.0.3
-    # via apache-superset
+    # via
+    #   pandas
+    #   sanitized-package
 paramiko==2.11.0
     # via sshtunnel
 parsedatetime==2.6
-    # via apache-superset
+    # via sanitized-package
 pgsanity==0.2.9
-    # via apache-superset
+    # via sanitized-package
 polyline==2.0.0
-    # via apache-superset
+    # via sanitized-package
 prison==0.2.1
     # via flask-appbuilder
 prompt-toolkit==3.0.38
     # via click-repl
 pyarrow==12.0.0
-    # via apache-superset
+    # via sanitized-package
 pycparser==2.20
     # via cffi
 pygments==2.15.0
     # via rich
 pyjwt==2.4.0
     # via
-    #   apache-superset
     #   flask-appbuilder
     #   flask-jwt-extended
+    #   sanitized-package
 pynacl==1.5.0
     # via paramiko
 pyparsing==3.0.6
-    # via apache-superset
+    # via sanitized-package
 pyrsistent==0.19.3
     # via jsonschema
 python-dateutil==2.8.2
     # via
     #   alembic
-    #   apache-superset
     #   croniter
     #   flask-appbuilder
     #   holidays
     #   pandas
+    #   sanitized-package
 python-dotenv==0.19.0
-    # via apache-superset
+    # via sanitized-package
 python-editor==1.0.4
     # via alembic
 python-geohash==0.8.5
-    # via apache-superset
+    # via sanitized-package
 pytz==2021.3
     # via
     #   babel
@@ -258,18 +260,18 @@ pytz==2021.3
     #   pandas
 pyyaml==6.0.1
     # via
-    #   apache-superset
     #   apispec
+    #   sanitized-package
 redis==4.5.4
-    # via apache-superset
+    # via sanitized-package
 rich==13.3.4
     # via flask-limiter
 selenium==3.141.0
-    # via apache-superset
+    # via sanitized-package
 shortid==0.1.2
-    # via apache-superset
+    # via sanitized-package
 simplejson==3.17.3
-    # via apache-superset
+    # via sanitized-package
 six==1.16.0
     # via
     #   click-repl
@@ -279,30 +281,30 @@ six==1.16.0
     #   python-dateutil
     #   wtforms-json
 slack-sdk==3.21.3
-    # via apache-superset
+    # via sanitized-package
 sqlalchemy==1.4.36
     # via
     #   alembic
-    #   apache-superset
     #   flask-appbuilder
     #   flask-sqlalchemy
     #   marshmallow-sqlalchemy
+    #   sanitized-package
     #   sqlalchemy-utils
 sqlalchemy-utils==0.38.3
     # via
-    #   apache-superset
     #   flask-appbuilder
+    #   sanitized-package
 sqlparse==0.4.4
-    # via apache-superset
+    # via sanitized-package
 sshtunnel==0.4.0
-    # via apache-superset
+    # via sanitized-package
 tabulate==0.8.9
-    # via apache-superset
+    # via sanitized-package
 typing-extensions==4.4.0
     # via
-    #   apache-superset
     #   flask-limiter
     #   limits
+    #   sanitized-package
 tzdata==2023.3
     # via pandas
 urllib3==1.26.6
@@ -312,30 +314,30 @@ vine==5.0.0
     #   amqp
     #   celery
     #   kombu
+waitress==2.1.2
+    # via sanitized-package
 wcwidth==0.2.5
     # via prompt-toolkit
-werkzeug==2.3.3
+werkzeug==2.3.8
     # via
-    #   apache-superset
     #   flask
     #   flask-jwt-extended
     #   flask-login
+    #   sanitized-package
 wrapt==1.15.0
     # via deprecated
 wtforms==2.3.3
     # via
-    #   apache-superset
     #   flask-appbuilder
     #   flask-wtf
+    #   sanitized-package
     #   wtforms-json
 wtforms-json==0.3.5
-    # via apache-superset
+    # via sanitized-package
 xlsxwriter==3.0.7
-    # via apache-superset
+    # via sanitized-package
 zipp==3.15.0
-    # via
-    #   importlib-metadata
-    #   importlib-resources
+    # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
